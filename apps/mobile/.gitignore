@@ -1,0 +1,6 @@
+# App-local ignores. Most patterns live in the repo-root .gitignore.
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*

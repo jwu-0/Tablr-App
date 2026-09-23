@@ -1,0 +1,55 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# env — real values never get committed; .env.example files DO
+.env
+.env.*
+!.env.example
+
+# Expo / RN
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+ios/
+android/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# build artifacts
+build/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
+
+# logs / debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# other
+TODO.md

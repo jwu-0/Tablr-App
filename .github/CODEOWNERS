@@ -1,0 +1,30 @@
+# Who must review what.
+#
+# Replace the placeholder handles before enabling required reviews.
+
+# Default: anything not matched below.
+*                                       @jwu-0
+
+# --- Frontend ---------------------------------------------------------------
+/apps/mobile/                           @jwu-0 # TODO: add Victor here
+/apps/restaurant-web/                   @jwu-0 # TODO: add Victor here
+
+# --- Backend ----------------------------------------------------------------
+/backend/                               @jwu-0
+/supabase/                              @jwu-0
+/packages/api-schema/                   @jwu-0
+
+# Generated from openapi.json — never hand-edited.
+/apps/mobile/src/lib/api/generated/     @jwu-0
+
+# The API wrapper decides how auth tokens are attached.
+/apps/mobile/src/lib/api/index.ts       @jwu-0
+/apps/mobile/src/lib/supabase/          @jwu-0
+
+# --- Anything that can leak a secret or widen access ------------------------
+/.github/                               @jwu-0
+/backend/app/core/cors.py               @jwu-0
+/backend/app/core/security.py           @jwu-0
+/backend/app/deps.py                    @jwu-0
+/supabase/migrations/                   @jwu-0
+**/.env.example                         @jwu-0

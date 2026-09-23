@@ -1,0 +1,9 @@
+/*
+ * Tailwind entry point, consumed by NativeWind's Metro transformer (see
+ * `metro.config.js`). The colour variables are not written here — they
+ * are generated from `src/lib/theme/tokens.ts` by the plugin in
+ * `tailwind.config.js`, so there is exactly one source of truth.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

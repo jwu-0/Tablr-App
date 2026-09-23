@@ -1,0 +1,24 @@
+{
+  "name": "tablr",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.5.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:mobile": "pnpm --filter @tablr/mobile start",
+    "dev:backend": "cd backend && . ./scripts/activate.sh && uvicorn app.main:app --reload --port 8000",
+    "export:openapi": "cd backend && . ./scripts/activate.sh && python scripts/export_openapi.py",
+    "codegen": "pnpm export:openapi && pnpm --filter @tablr/mobile codegen",
+    "seed": "cd backend && . ./scripts/activate.sh && python scripts/seed.py",
+    "lint": "pnpm -r lint && pnpm lint:backend",
+    "lint:backend": "cd backend && . ./scripts/activate.sh && ruff check . && ruff format --check .",
+    "format": "pnpm format:backend",
+    "format:backend": "cd backend && . ./scripts/activate.sh && ruff format .",
+    "typecheck": "pnpm -r typecheck && pnpm typecheck:backend",
+    "typecheck:backend": "cd backend && . ./scripts/activate.sh && mypy app",
+    "test": "pnpm -r test && pnpm test:backend",
+    "test:backend": "cd backend && . ./scripts/activate.sh && pytest -q"
+  }
+}

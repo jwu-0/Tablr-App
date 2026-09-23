@@ -1,0 +1,5 @@
+# Generated from packages/api-schema/openapi.json — collapse it in diffs.
+apps/mobile/src/lib/api/generated/** linguist-generated=true
+packages/api-schema/openapi.json     linguist-generated=true
+
+pnpm-lock.yaml -diff
