@@ -4,9 +4,9 @@ Tablr is a cross-platform iOS/Android social dining app with a corresponding web
 It matches verified college students with similar interests for group meals at local restaurants.
 
 > **Status: scaffold.** Every file below exists, compiles, and runs — but returns stub
-> data. Features get filled in as vertical slices — see [TABLR_PLAN.md](TABLR_PLAN.md).
-> (That plan is tentative and will need updating over time.) Decisions the
-> scaffold deliberately left open are in [TODO.md](TODO.md).
+> data. Features will get filled in as vertical slices — see [TABLR_PLAN.md](TABLR_PLAN.md).
+> (This plan is tentative and will need updating over time!) Decisions currently left open
+> are in [TODO.md](TODO.md) which isn't committed as it is a temporary file. 
 
 ## Layout
 
